@@ -30,3 +30,7 @@ db.addUser =
 .end() // sends back an empty response
 router.put // its for updating a resource
 .delete() //deletes entry in database
+router.delete //
+res.status //
+
+More info on these topics: https://harakeke-2019-handbook.herokuapp.com/week5/01-web-apis.html
