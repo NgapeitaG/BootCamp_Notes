@@ -8,7 +8,7 @@ Superagent: is basically so we can consume our routes from the client side. This
 Supertest is using superagents methods.
 
 res.json -
- its utilities stringily.josn which means to take a javascript object and convert it to a json object and send it as a string. 
+ its utilities stringily.json which means to take a javascript object and convert it to a json object and send it as a string. 
 It serialises our javascript object, turns it into a string, then calls res.send.
 
 Don’t forget to type in your route your want to display in your browser’s URL.
