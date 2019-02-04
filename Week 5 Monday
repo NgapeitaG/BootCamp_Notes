@@ -1,8 +1,16 @@
- Monday the 4th of February 2019
+ <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h2>Monday the 4th of February 2019</h2>
 
 Yarn run - show you each of the scripts which are in it.
 
-# Dev Dependancies
+Dev Dependancies
 
 Superagent: is basically so we can consume our routes from the client side. This is our bridge which sits between our client and server.
 Supertest is using superagents methods.
@@ -34,3 +42,6 @@ router.delete //
 res.status //
 
 More info on these topics: https://harakeke-2019-handbook.herokuapp.com/week5/01-web-apis.html
+
+</body>
+</html>
