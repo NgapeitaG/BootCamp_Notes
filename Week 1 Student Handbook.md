@@ -5,7 +5,7 @@
 	▪	A package manager lets you use other people's JavaScript modules. It saves us having to write code from scratch, hence why we use Yarn. 
 	▪	Yarn reads the package.json file in the root directory of your project. Of particular interest are the scripts and dependencies properties.
 
-		Useful Yarn commands to understand:
+## Useful Yarn commands to understand:
 
 	▪	yarn install - installs all the dependencies listed in your package.json file in a node_modules folder
 	▪	yarn start - usually used to launch a server or other continuous development/debugging environment
@@ -15,10 +15,10 @@
 You will see frequent references to npm, another package manager for Node. We use Yarn at EDA, but the two share many similarities and you will likely encounter both in the workplace.
 
 
-	Node.js Documentation:
+## Node.js Documentation:
 
 
-	fs.readFile(path[, options], callback)
+### fs.readFile(path[, options], callback)
 
 	•	fs.readfile asynchronously reads the entire contents of a file
 	•	The callback is passed two arguments (err, data), where data is the contents of the file.
@@ -27,26 +27,26 @@ You will see frequent references to npm, another package manager for Node. We us
 	});
 
 
-	fs.readFileSync(path[, options])
+### fs.readFileSync(path[, options])
 
 	•	fs.readFileSync returns the contents of the path.
 	•	The path can include a string, buffer, url or integer.
 	•	If the encoding option is specified, then this function returns a string. Otherwise, it returns a buffer which is a whole lot of unreadable code = fs.readFileSync('<directory>');
 
-	__dirname
+## __dirname
 
 	•	_dirname prints the directory name of the current module/file. This is the same as the path.dirname.
 
-	__filename
+## __filename
 
 	•	The file name of the current module. This is the current module file's absolute path with symlinks resolved.
 
-	__path.join
+## __path.join
 
 	•	The path.join() method joins all given path parts together, then normalizes the resulting path.
 	•	A TypeError is thrown if any of the path segments is not a string
 		
-		Example:
+### Example:
 
 path.join('/foo', 'bar', 'baz/asdf', 'quux', '..');
 // Returns: '/foo/bar/baz/asdf'
@@ -55,9 +55,9 @@ path.join('foo', {}, 'bar');
 // Throws 'TypeError: Path must be a string. Received {}'
 
 
-	Datatypes:
+# Datatypes:
 
-	Seven different datatypes in javascript:
+## Seven different datatypes in javascript:
 
 	•	Six data types that are primitives:
 	◦	Boolean
@@ -68,10 +68,9 @@ path.join('foo', {}, 'bar');
 	◦	Symbol (new in ECMAScript 6)
 	•	and Object
 
-	Typeof
+## Typeof
 	•	The typeof operator returns a string indicating the typeof the value you want to evaluate.
-
-Example:
+### Example:
 console.log(typeof 'blubber');
 // expected output: "string"
 
@@ -85,7 +84,7 @@ console.log(‘This is a ?: string, typeof types.str)
 
 This returns the datatype for the property str in the types const.	
 
-	First-class Functions
+# First-class Functions
 
 	•	An important thing to remember about functions in JavaScript is: functions are values.
 	•	We can store functions in variables
@@ -93,7 +92,7 @@ This returns the datatype for the property str in the types const.
 	•	Functions can have properties
 	•	We can pass functions as arguments into other functions
 
-	Data Structures
+# Data Structures
 
 	•	If an object is too deep you can also tell it to give you its keys using the method Object.keys(). For example:
 	Object.keys(response)
@@ -119,24 +118,24 @@ This returns the datatype for the property str in the types const.
 	•	It works with Babel, Typescript, Node, React, Angular, Vue and more.
 
 
-	Query selector
+## Query selector
 
 		A querySelector() is a function which grabs a reference to an element in your HTML file such as the H1 heading, and then it gives you the ability to change that 				element.
 
-		Example:
+## Example:
 
 	var myHeading = document.querySelector('h1');
 	myHeading.textContent = 'Hello world!';
 	// Selects the ‘h1’ in your HTML file and changes the heading to ‘Hello world!’
 
-	Variables
+### Variables
 	Variables are containers that you can store values in. You start by declaring a variable with the var keyword, followed by any name you want to 	call it:
 	var myVariable;
 
 	After declaring a variable, you can give it a value:
 	myVariable = 'Bob';
 
-	Operators
+# Operators
 	An operator is a mathematical symbol which produces a result based on two given values.
 	Assignment = Assigns values to a variable
 	Equality === Does a test to see if two values are equal to one another and returns a true/false result. E.g. 3 === 4 //Returns false
@@ -145,20 +144,20 @@ This returns the datatype for the property str in the types const.
 	Not/does not equal !==	When it is used alongside the Equality operator, the negation (!) operator tests whether two values are not equal.
 	! returns the opposite value of what it precedes. It turns a true into a false.
 
-	Arguments
+# Arguments
 	Arguments are bits of data which functions need to do their job. They go inside the parenthesis() and are separated by comma’s if there are 		more than one argument. 
 
-	Return
+# Return
 	The return statement tells the browser to return the result of anything happening 	inside the function brackets {}. When you 		run your function, it will automatically return the function. 
 
-	Events
+# Events
 	Real interactivity on a website needs events.These are code structures which listen for things happening in browser, running code in response.
 	The most obvious example is the click event, which is fired by the browser when you click on something with your mouse.
 
 		A prompt function will bring up a dialog box, a bit like alert().
 	⁃	localStorage allows us to store data in the browser and retrieve later on.
 	
-	Test-driven Development
+# Test-driven Development
 	
 	TDD is writing a test for a function/line of code before you’ve actually written it. By testing the outcome before you've written it, you 			plan more effectively exactly what that code needs to do.
 
@@ -193,16 +192,16 @@ We should always run the tests again after we've refactored to be sure we haven'
 	•	Supports refactoring with confidence
 	•	Alerts us if we break something by mistake in the future
 
-	Writing tests
+# Writing tests
 	
 	It's important that tests are clear, and state exactly what you expect the code to do. It's important that your tests are as clear as possible.
 
-Each test should be made up of 3 distinct parts:
+## Each test should be made up of 3 distinct parts:
 	1	Arrange
 	2	Act
 	3	Assert
 
-example:
+## example:
 test('can create a 2x2 matrix', () => {
   // arrange
   const expected = [[0,0], [0,0]]
@@ -215,15 +214,15 @@ test('can create a 2x2 matrix', () => {
 })
 
 
-	Networking
+# Networking
 
 	•	A server is often referred to as the physical or virtual machine. It's what responds when we visit a web site, sending us all the information our browser needs to display the site correctly. So basically, it’s in charge of getting data so that we can see those things in our browser as a webpage.
 
-	A service:
+## A service:
 	•	Listens for requests and then serves responses
 	•	A web server is a service which serves web pages
 
-	Ports:
+## Ports:
 	•	The particular 'door' at an address
 	•	The connection to the application/service, such as HTTP, that is listening for requests
 	•	e.g. port 3000
@@ -241,7 +240,7 @@ API:
 	•	
 
 
-	Express.js
+# Express.js
 
 	•	Express makes it easy to create server-side web applications by providing an easy way to read and manipulate the HTTP requests and responses.
 	•	the res parameter sends a response to the client.This is a Node.js response object that is provided through Express.
@@ -252,7 +251,7 @@ API:
 	•	The app.get() call allows us to define endpoints, also called routes, such as /. The server will only to respond to routes our application defines
 	•	Scripts are another name for javascript files.
 	
-	Separation of concerns
+## Separation of concerns
 
 	•	Routes are not related to running the server. 
 	•	Routes should always be typed into their own file such as routes.js
@@ -261,7 +260,7 @@ function home (req, res) {
   res.sendFile(__dirname + '/index.html')
 }
 
-	Route parameters
+## Route parameters
 
 	Another way we can send data to the server from the client is by using route parameters.
 	Example:
@@ -269,7 +268,7 @@ function home (req, res) {
   	res.send('Org: ' + req.params.org + ', Repo: ' + req.params.repo)
 	})
 
-	Serving static files
+## Serving static files
 
 	All of our static files are put in a main file, usually the public file. Static files are files which should be sent directly to the browser 		without any modification. A good example of a static file are JPG’s and PNG’s.
 
@@ -277,7 +276,7 @@ function home (req, res) {
 
 	Instead of using res.sendFile to display every static file, we can just place them in the ‘public’ directory and use server.use or app.use. 		Look in the example below. 
 
-	Example:
+### Example:
 	const express = require('express')
 const server = express()
 server.use(express.static('public')) 
@@ -288,7 +287,7 @@ server.use(express.static('public'))
 	•	http://localhost:3000/styles/main.css
 	•	http://localhost:3000/scripts/tiles.js
 
-	Debugging Node.js
+# Debugging Node.js
 	
 	Node comes with a built in debugger you can use to inspect what is going on in your code.
 	You can use it by putting debug after your node command. For example, node debug server.js
