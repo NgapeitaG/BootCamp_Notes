@@ -1,7 +1,7 @@
-Wednesday the 23rd of January 2019
+### Wednesday the 23rd of January 2019
 
 
-Recap:
+# Recap:
 
 	•	Joins
 	•	promises inside of promises
