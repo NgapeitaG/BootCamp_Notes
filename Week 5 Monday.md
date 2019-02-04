@@ -2,7 +2,7 @@
 
 Yarn run - show you each of the scripts which are in it.
 
-Dev Dependancies
+## Dev Dependancies
 
 Superagent: is basically so we can consume our routes from the client side. This is our bridge which sits between our client and server.
 Supertest is using superagents methods.
