@@ -1,6 +1,6 @@
-Monday the 21st of January 2019
+## Monday the 21st of January 2019
 
-Servers and routes -
+# Servers and routes -
 
 	•	Index.js and server.js are separated because of testing. 
 	•	server.use is part of routing
@@ -19,14 +19,13 @@ Servers and routes -
 	•	Be comfortable with module.exports and require
 
 
-Index.js = index has a dependancy on server
-server.js = is exported or required into index. Server requires routes. Server.use uses the routes from routes.js.
-Routes.js =  Routes requires Db’s
+### Index.js = index has a dependancy on server
+### server.js = is exported or required into index. Server requires routes. Server.use uses the routes from routes.js.
+### Routes.js =  Routes requires Db’s
 Db = 
 
-Routes:
+# Routes:
 https://medium.com/@fro_g/routing-in-javascript-d552ff4d2921
 
-Server:
 
 
