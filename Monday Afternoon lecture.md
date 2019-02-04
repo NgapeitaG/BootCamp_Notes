@@ -1,4 +1,4 @@
-###Monday the 21st of January 2019
+### Monday the 21st of January 2019
 
 # Week 3 afternoon lecture:
 
