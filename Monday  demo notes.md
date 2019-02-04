@@ -1,6 +1,6 @@
-					    Monday the 21st of January 2019
+## Monday the 21st of January 2019
 
-		  These are the notes which I took whilst watching a code from class demo video on youtube
+These are the notes which I took whilst watching a code from class demo video on youtube
 
 # Week 3 - Code from class demo
 
