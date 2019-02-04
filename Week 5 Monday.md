@@ -7,7 +7,7 @@ Yarn run - show you each of the scripts which are in it.
 Superagent: is basically so we can consume our routes from the client side. This is our bridge which sits between our client and server.
 Supertest is using superagents methods.
 
-res.json -
+## res.json 
  its utilities stringily.json which means to take a javascript object and convert it to a json object and send it as a string. 
 It serialises our javascript object, turns it into a string, then calls res.send.
 
@@ -15,14 +15,14 @@ Don’t forget to type in your route your want to display in your browser’s UR
 
 Curl is going to send a request without a visual browser. Will send a get request and returns the data. 
 
-Postman - 
+## Postman  
   Postman is a program which you can find on the DevAcademy computers
 	•	Enter request URL, select get request and then send
 
 Increments have a memory of all the user ID’s
 
 
-Router.post
+## Router.post
 
 db.addUser = 
 .then(console.log) // will show the most recently added ID
@@ -33,4 +33,4 @@ router.put // its for updating a resource
 router.delete //
 res.status //
 
-More info on these topics: https://harakeke-2019-handbook.herokuapp.com/week5/01-web-apis.html
+### More info on these topics: https://harakeke-2019-handbook.herokuapp.com/week5/01-web-apis.html
