@@ -1,8 +1,8 @@
-Monday the 21st of January 2019
+###Monday the 21st of January 2019
 
-Week 3 afternoon lecture:
+# Week 3 afternoon lecture:
 
-Promises:
+## Promises:
 
 What is it?
 A syntax for working with async Javascript functions
