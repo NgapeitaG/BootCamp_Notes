@@ -1,8 +1,8 @@
 Monday the 21st of January 2019
 
-Week 3 - Code from class demo
+# Week 3 - Code from class demo
 
-Databases:
+## Databases:
 	•	Create
 	•	Read
 	•	Update
@@ -17,32 +17,30 @@ Databases:
 	•	Primary keys
 	•	Foreign key
 
-Metadata (Schema)
+## Metadata (Schema)
 Name of the table (Fields and columns)
 - Types
 
 
-Data:
-Rows
+# Data:
 
+## Files vs servers
 
-Files vs servers
-
-Relational/ structured storage:
+### Relational/ structured storage:
 there’s a relationship shown between al the data
 
 Started with yarn init -y
 Yarn add knex 
 Yarn knex init
 
-	•	We will be using development in our knexfile.js
-	•	useNullasDefault :true
+- We will be using development in our knexfile.js
+- 	useNullasDefault :true
 
-	▪	Migration: is a script that we build out that will build our database (yarn knex migrate:make)
+-	Migration: is a script that we build out that will build our database (yarn knex migrate:make)
 - exports.up (will build out a database schema
 - exports.down (will get rid of it)
 
-exports.up = function(knee, Promise) {
+#### exports.up = function(knee, Promise) {
 return knee.schema.createTable(‘tasks’ , (table) => {
 table.increments(‘id’)
 Increments creates a new data type
@@ -51,7 +49,7 @@ table.boolean(‘completed’)
 })
 }
 
-exports.down = function(knee, Promise) {
+#### exports.down = function(knee, Promise) {
 return knee.schema.createTable(‘tasks’ , (table) => {
 table.increments(‘id’)
 table.string(‘name’)
@@ -59,7 +57,7 @@ table.boolean(‘completed’)
 })
 }
 
-The way in which we run these commands is:
+## The way in which we run these commands is:
 $yarn knex migrate:latest
 
  Creates = dev.sqlite3
@@ -90,7 +88,7 @@ Selects our tasks tables, then grabs the tasks for each and returns them.
 
 
 
-Website about Knex.js:
+#### Website about Knex.js:
 https://knexjs.org
 
 
@@ -98,7 +96,7 @@ Ask a tutor how would they commend we go over the concepts we’ve learnt so far
 Should we go over the exercises or code from class?
 
 
-tasks.completed ( line 10 of index.js)
+### tasks.completed ( line 10 of index.js)
 Will evaluate as truth or false. 
 
 
@@ -106,17 +104,17 @@ Will evaluate as truth or false.
 	•	SQL is not taught to us
 	•	It’s not really needed in web app
 
-Summary of concepts:
-Make and run migration
-Make and run seeds
+# Summary of concepts:
+## Make and run migration
+## Make and run seeds
 
-Exercise: Today we’re building a todo list
+### Exercise: Today we’re building a todo list
 
 Use command b to format your file. It will fix indentations.
 
 Check in and out with your pair. 
 
-Be comfortable in a pair and be comfortable with going solo. 
+#### Be comfortable in a pair and be comfortable with going solo. 
 
 
 	•	Migrations allow you to define sets of schema changes so upgrading a database is a breeze.
