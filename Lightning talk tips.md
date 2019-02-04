@@ -10,7 +10,7 @@
 - Don’t sound monotonous or mono-toned
 - Speak and face towards the group.
 - Speak clearly and concisely.
-- - Be less fidgety
+- Be less fidgety
 - Control hands
 - Avoid touching face
 - Practice to friends
