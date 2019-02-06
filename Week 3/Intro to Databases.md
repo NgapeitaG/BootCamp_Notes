@@ -1,4 +1,4 @@
-# S03E01-1 Intro to DBs
+# Week 3 - 1 Intro to DBs
 
 ## Intro
 ### Whiteboard
